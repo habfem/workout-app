@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Clear the file",
+      "day": "February 18th at 10:00 GMT",
+      "reminder": false
+    },
+    {
+      "text": "Grocery shopping",
+      "day": "March 1st at 18:00 pm GMT",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "Type the report",
+      "day": "February 24th at 13:40 GMT",
+      "reminder": false,
+      "id": 4
+    },
+    {
+      "text": "Go to the embassy",
+      "day": "March 1st at 6:30 GMT",
+      "reminder": true,
+      "id": 5
+    }
+  ]
+}

@@ -19,7 +19,7 @@ The build is minified and the filenames include the hashes.\
 
 ### `npm install -g json-server`
 
-Install a full fake REST API 
+Install a full fake REST API. 
 Create a db.json file with some data
 
 ### `npm run server`

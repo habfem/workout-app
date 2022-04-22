@@ -10,28 +10,7 @@ import About from './components/About';
 
  function App() {
   const [showAddTask, setShowAddTask] = useState (false)
-  const [tasks, setTasks] = useState ([
-    /* {
-      id: 1,
-      text: 'Clear the file',
-      day: 'February 18th at 10:00 GMT',
-      reminder: true,
-  },
-  
-  {
-      id: 2,
-      text: 'Type the report',
-      day: 'February 24th at 13:40 GMT',
-      reminder: true,
-  },
-
-  {
-      id: 3,
-      text: 'Grocery shopping',
-      day: 'March 1st at 18:00 pm GMT',
-      reminder: false,
-  }, */
-  ])
+  const [tasks, setTasks] = useState ([  ])
 
   useEffect (() => {
     const getTasks = async () => {
@@ -105,12 +84,11 @@ const toggleReminder = async (id) => {
   setTasks(tasks.map((task) => task.id === id ? 
   { ...task, reminder: data.reminder} : task ))
 }
-
-
-  return (
+  return ( 
     <Router>
 
     <div className="container">
+     
       <Header onAdd={() => setShowAddTask(!showAddTask)} 
       showAddTask ={showAddTask} />
 
@@ -118,7 +96,7 @@ const toggleReminder = async (id) => {
       <Route path='/'
       element={
         <>
-         { showAddTask && <AddTask onAdd={addTask} /> } 
+          { showAddTask && <AddTask onAdd={addTask} /> }  
       {tasks.length > 0 ? (<Tasks tasks = {tasks}  //if task length is graeter than zero show taaks if not show 'No tasks found'
       onDelete = {deleteTask}
       onToggle={toggleReminder}/>) : ('No tasks found')}

@@ -6,8 +6,34 @@
   padding: 0;
 }
 
+/*Change the texture of the scroll bar*/
+body::-webkit-scrollbar {   
+  width: 0.5rem;
+}
+
+ body::-webkit-scrollbar-track{
+  background: #232329;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #393a7a;
+} 
+
+
 body {
   font-family:  'Poppins', sans-serif;
+  background-color: rgb(224, 231, 253);
+  background-image: url('https://t3.ftcdn.net/jpg/04/20/64/84/360_F_420648483_3S84F7kBHBvBgLdjP6VzP2wVBuTdITyB.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+@media(max-width:1250px){
+  body{
+    background-image: url();
+    height: 100%;
+  }
 }
 
 .container {
@@ -15,7 +41,7 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 2px solid steelblue;
   padding: 30px;
   border-radius: 5px;
 }
